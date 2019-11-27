@@ -13,11 +13,27 @@ I don't have any GPUs :) So that's why I've done these kinds of experiments on a
 
 # English Datasets
     
-     Train Data - 170K Plain Texts that contain polarity labels respectively. (Not Movie Reivews)
-     Test Data - Kaggle Movie Review Corpora that contain polarity lables respectively.
+     Train Data - 170K Plain Texts that contain polarity labels respectively. (Not Movie Reivews, a sentence per data)
+     Test Data - 25K Kaggle Movie Review Corpora that contain polarity lables respectively. (11~17 sentences per data on Average)
 
 # Korean Datasets
 
      Train Data - 150K Plain Texts that contain polarity labels crawled from Naver Movie.
      Test Data - 50K Plain Texts that contain polarity labels crawled from Naver Movie.
  	 
+ 	 
+ 	 
+ 	Trial	Representation Model	Train Data	Test Data	Last Layer Classifier	Test Accuracy(%)
+1	wiki_multilingual_cased
+(Google) + Fine Tuning	NAVER Movie Reviews(Korean)	NAVER Movie Reviews(Korean)	Softmax Layer	87.1
+2	wiki_multilingual_cased
+(Google) + Fine Tuning	170K Plain Texts(English)	25K Kaggle Movie Corpora(English)	Softmax
+Layer	82.1 -> 83.0
+3	korean_bert_model
+(ETRI) + Fine Tuning	NAVER Movie Reviews(Korean)	NAVER Movie Reviews(Korean)	Softmax Layer	
+4	Word2Vec (Google) + Word Embedding	170K Plain Texts(English)	25K Kaggle Movie Corpora(English)	CNN
+Layer	68.0
+5	Word2Vec (Google) + Word Embedding	NAVER Movie Reviews(Korean)	NAVER Movie Reviews(Korean)	Bi-LSTM Softmax Layer	86.5
+					
+					
+					
