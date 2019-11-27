@@ -26,9 +26,9 @@ I don't have any GPUs :) So that's why I've done these kinds of experiments on a
 
  	Trial	Representation Model	                        Train Data	                                Test Data	    Last Layer Classifier	Test Accuracy(%)
         
-        1   wiki_multilingual_cased (Google) + Fine Tuning	NAVER Movie Reviews(Korean)	      NAVER Movie Reviews(Korean)	  Softmax Layer	        **87.1**
+        1   wiki_multilingual_cased (Google) + Fine Tuning	NAVER Movie Reviews(Korean)	      NAVER Movie Reviews(Korean)	  Softmax Layer	        *87.1
         
-        2   wiki_multilingual_cased (Google) + Fine Tuning	  170K Plain Texts(English)	25K Kaggle Movie Corpora(English)	  Softmax Layer	    82.1 -> 83.03	
+        2   wiki_multilingual_cased (Google) + Fine Tuning	  170K Plain Texts(English)	25K Kaggle Movie Corpora(English)	  Softmax Layer	    *82.1 -> 83.03	
         
         3   korean_bert_model(ETRI) + Fine Tuning	        NAVER Movie Reviews(Korean)	      NAVER Movie Reviews(Korean)	  Softmax Layer	
         
