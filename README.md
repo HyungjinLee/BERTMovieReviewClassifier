@@ -5,6 +5,7 @@ Such a shame... Environments where I have been doing experiments are completely 
 * Deep Learning Environments
 
     BERT (My Model) -> MXNET
+    
     Text_Claasification_CNN, Bi_LSTM -> Tensorflow 
 
 So I'll share all the GitHub links respectively. From this way, I think it is gonna be much easier to execute them.
