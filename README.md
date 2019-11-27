@@ -9,7 +9,7 @@ Such a shame... Environments where I have been doing experiments are completely 
 
 So I'll share all the GitHub links respectively. Please refer to the links on folders. From this way, I think it is gonna be much easier to execute them.
 
-I don't have any GPUs :) So that's why I've done these kinds of experiments on a GPU Server. If you don't, you might be working on it with your CPU which will take so long time... (A day per one epoch) I highly recommend using GPUs.
+I don't have any GPUs :) So that's why I've done these kinds of experiments on a GPU Server. If you don't, you might be working on it with your CPU which will take so long time... (A day per one epoch!) I highly recommend using GPUs.
 
 # English Datasets
     
