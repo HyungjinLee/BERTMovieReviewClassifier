@@ -11,13 +11,13 @@ So I'll share all the GitHub links respectively. From this way, I think it is go
 
 I don't have any GPUs :) So that's why I've done these kinds of experiments on a GPU Server. If you don't, you might be working on it with your CPU which will take so long time... (A day per one epoch) I highly recommend using GPUs.
 
-* English Datasets
+# English Datasets
     
-    # Train Data - 170K Plain Texts that contain polarity labels respectively. (Not Movie Reivews)
-    # Test Data - Kaggle Movie Review Corpora that contain polarity lables respectively.
+     Train Data - 170K Plain Texts that contain polarity labels respectively. (Not Movie Reivews)
+     Test Data - Kaggle Movie Review Corpora that contain polarity lables respectively.
 
-* Korean Datasets
+# Korean Datasets
 
-    # Train Data - 150K Plain Texts that contain polarity labels crawled from Naver Movie.
-    # Test Data - 50K Plain Texts that contain polarity labels crawled from Naver Movie.
+     Train Data - 150K Plain Texts that contain polarity labels crawled from Naver Movie.
+     Test Data - 50K Plain Texts that contain polarity labels crawled from Naver Movie.
  	 
