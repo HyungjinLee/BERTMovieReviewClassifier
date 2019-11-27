@@ -2,10 +2,9 @@ These are a series of experiments for KHU Capstone Design Project 2019.
 
 Such a shame... Environments where I have been doing experiments are completely different. 
 
-* Deep Learning Environments
-
-    BERT (My Model) -> MXNET
+# Deep Learning Environments
     
+    BERT (My Model) -> MXNET
     Text_Claasification_CNN, Bi_LSTM -> Tensorflow 
 
 So I'll share all the GitHub links respectively. From this way, I think it is gonna be much easier to execute them.
