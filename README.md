@@ -29,7 +29,6 @@ For some reasons regarding Intellectual Property, I'm not going to share python 
      Train Data - 150K Plain Texts that contain polarity labels crawled from Naver Movie.
      Test Data - 50K Plain Texts that contain polarity labels crawled from Naver Movie.
  	 
- 	 
 # Results
 
      Trial 	         Representation Model	                         Train Data	                     Test Data	             Last Layer Classifier	    Test Accuracy(%) 
@@ -44,3 +43,5 @@ For some reasons regarding Intellectual Property, I'm not going to share python 
         
        5	           Word2Vec (Google) + Word Embedding	NAVER Movie Reviews(Korean)	        NAVER Movie Reviews(Korean)   Bi-LSTM Softmax Layer	          86.5
 					
+
+This work used Korean Language Model(KorBERT) provided by ETRI (No.2013-2-00131, Development of Knowledge Evolutionary WiseQA Platform Technology for Human Knowledge Augmented Services)
