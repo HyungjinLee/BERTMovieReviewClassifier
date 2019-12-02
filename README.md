@@ -6,6 +6,14 @@ Such a shame... Environments where I have been doing experiments are completely 
     
     BERT (My Model) : MXNET
     Text_Claasification_CNN, Bi_LSTM : Tensorflow 
+    Korean BERT (ETRI Pretrained model + My Classifier Model) : Pytorch
+    
+    * For some reasons regarding Intellectual Property, I'm not going to share python code for fine tuning and model provided by ETRI.
+      you can refer to it by a link below :  
+      - tensorflow
+	  . https://github.com/google-research/bert
+	  - pytorch
+	  . https://github.com/huggingface/pytorch-pretrained-BERT/
 
 So I'll share all the GitHub links respectively. Please refer to the links on folders. I think it is gonna be much easier to execute them.
 
