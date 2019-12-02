@@ -37,7 +37,7 @@ For some reasons regarding Intellectual Property, I'm not going to share python 
         
        2   wiki_multilingual_cased (Google) + Fine Tuning	  170K Plain Texts(English)	  25K Kaggle Movie Corpora(English)	           Softmax Layer	  *82.1 -> *83.0	
        
-       3            korean_bert_model(ETRI) + Fine Tuning   NAVER Movie Reviews(Korean)	        NAVER Movie Reviews(Korean)	          Softmax Layer	
+       3            korean_bert_model(ETRI) + Fine Tuning   NAVER Movie Reviews(Korean)	        NAVER Movie Reviews(Korean)	          Softmax Layer	         *89.3
         
        4	           Word2Vec (Google) + Word Embedding	  170K Plain Texts(English)	  25K Kaggle Movie Corpora(English)	              CNN Layer	          68.0
         
