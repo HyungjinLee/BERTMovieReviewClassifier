@@ -8,16 +8,16 @@ Such a shame... Environments where I have been doing experiments are completely 
     Text_Claasification_CNN, Bi_LSTM : Tensorflow 
     Korean BERT (ETRI Pretrained model + My Classifier Model) : Pytorch
     
-    * For some reasons regarding Intellectual Property, I'm not going to share python code for fine tuning and model provided by ETRI.
-      you can refer to it by a link below :  
-      - tensorflow
-	    (https://github.com/google-research/bert)
-	  - pytorch
-	    (https://github.com/huggingface/pytorch-pretrained-BERT/)
 
 So I'll share all the GitHub links respectively. Please refer to the links on folders. I think it is gonna be much easier to execute them.
-
 I don't have any GPUs :) So that's why I've done these kinds of experiments on a GPU Server. If you don't, you might be working on it with your CPU which will take so long time... (A day per one epoch!) I highly recommend using GPUs.
+
+For some reasons regarding Intellectual Property, I'm not going to share python code for fine tuning and model provided by ETRI. You can refer to it by a link below :  
+      
+      - tensorflow
+	    (https://github.com/google-research/bert)
+      - pytorch
+	    (https://github.com/huggingface/pytorch-pretrained-BERT/)
 
 # English Datasets
     
