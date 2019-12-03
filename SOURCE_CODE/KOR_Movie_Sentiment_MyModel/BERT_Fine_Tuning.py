@@ -90,10 +90,45 @@ class BERTClassifier(nn.Block):
             if dropout:
                 self.classifier.add(nn.Dropout(rate=dropout))
             self.classifier.add(nn.Dense(units=num_classes))
+        
+    # Make a prediction 
+    def predict(self, bert, problem) :
+        
+        bert_tokenizer = nlp.data.BERTTokenizer(vocabulary, lower = False)
+        problem = BERTDataset(problem, 0, 1, bert_tokenizer, 64, True, False)
+        my_test_dataloader = mx.gluon.data.DataLoader(problem, batch_size = 1, num_workers=1)
+        
+        for batch_id, (token_ids, valid_length, segment_ids, label) in enumerate(my_test_dataloader) :
+   
+            with mx.autograd.record():
+                        # load data
+                        token_ids = token_ids.as_in_context(ctx)
+                        valid_length = valid_length.as_in_context(ctx)
+                        segment_ids = segment_ids.as_in_context(ctx)
+                        label = label.as_in_context(ctx)
+            
+                        #forward computation
+                        out = model(token_ids, segment_ids, valid_length.astype('float32'))
+                        print(out)
+    
+        # return an answer that model derives
+        return out.argmax(axis = 1)     
+        
 
     def forward(self, inputs, token_types, valid_length=None):
         _, pooler = self.bert(inputs, token_types, valid_length)
+
         return self.classifier(pooler)
+    
+# If you've already got your model trained. Execute it to load!! 
+'''
+file_name = 'mymodel_korean'
+model = BERTClassifier(pre_bert_base)
+
+model.load_parameters(file_name, ctx=ctx, allow_missing=True,ignore_extra=True)
+model.classifier.initialize(ctx=ctx)
+model.hybridize()
+'''
 
 # Generating a BERT Classifier and Initializing
 
@@ -142,8 +177,8 @@ def evaluate_accuracy(model, data_iter, ctx=ctx) :
         output = model(token_ids, segment_ids, valid_length.astype('float32'))
         acc.update(preds=output, labels=label)
         
-        print('i :', i)
-        print(output)
+        # print('i :', i)
+        # print(output)
         
         if i > 1000:
             break
@@ -200,6 +235,22 @@ for epoch_id in range(num_epochs) :
   
             step_loss = 0
 
-# Calculate Testing accuracy
+# Save my model for web deploying
+'''
+file_name = "mymodel_korean"
+model.save_parameters(file_name)
+'''
+
+# Calculate Testing accuracy in test dataset
 test_acc = evaluate_accuracy(model, test_dataloader, ctx)
 print('Test Acc : {}'.format(test_acc))
+
+# Calculate Testing accuracy in real time comments
+problem =[["어벤져스","0"]]
+answer = model.predict(pre_bert_base, problem)
+
+if answer[0] == 1 :
+    print("긍정입니다.")
+    
+else :
+    print("부정입니다.")
