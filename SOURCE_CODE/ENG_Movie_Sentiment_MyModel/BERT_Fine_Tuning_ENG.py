@@ -35,7 +35,7 @@ bert_base, vocabulary = nlp.model.get_model('bert_12_768_12',
                                            use_decoder=False, use_classifier=False)
 
 
-ds = gluon.data.SimpleDataset([['버트 코딩', '어려워']])
+ds = gluon.data.SimpleDataset([['BERT coding', 'not easy']])
 tok = nlp.data.BERTTokenizer(vocab=vocabulary, lower= False)
 trans = nlp.data.BERTSentenceTransform(tok, max_seq_length=10)
 list(ds.transform(trans))
