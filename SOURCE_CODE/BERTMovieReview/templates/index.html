@@ -1,5 +1,5 @@
 <html>
-
+    
 <head>
     <title>경희대학교 졸업 연구 - 2014104136 이형진</title>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
@@ -16,13 +16,17 @@
 
             <form id="upload" action="/predict" method="POST" enctype="multipart/form-data">
                    <input type="text" value="이 곳에 리뷰를 적어주세요." name="text" onfocus="this.value=''" style="width:300px;height:200px;font-size:15px;" >
-                    <button class="btn">감성 분석</button>
+                    <button class="btn" name="btn_identifier" value="predict">감성 분석</button>
+                
+                    <button class="btn" name="btn_identifier" value="report" >오류 보고</button>
+                
                 {% if label %}
                     <span class="result_label">
                         {{         label       }}
                     </span>
                 {% endif %}
             </form>
+            
         </div>
     </div>
 </div>

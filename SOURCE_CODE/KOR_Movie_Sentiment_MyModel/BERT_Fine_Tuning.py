@@ -108,7 +108,7 @@ class BERTClassifier(nn.Block):
                         label = label.as_in_context(ctx)
             
                         #forward computation
-                        out = model(token_ids, segment_ids, valid_length.astype('float32'))
+                        out = self(token_ids, segment_ids, valid_length.astype('float32'))
                         print(out)
     
         # return an answer that model derives

@@ -49,8 +49,7 @@ class BERTClassifier(nn.Block):
             
                         #forward computation
                         out = self(token_ids, segment_ids, valid_length.astype('float32'))
-                        print(out)
-    
+            
         # return an answer that model derives
         return out.argmax(axis = 1)     
         
