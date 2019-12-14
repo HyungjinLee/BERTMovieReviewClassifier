@@ -24,7 +24,7 @@ For some reasons regarding Intellectual Property, I'm not going to share python 
      Train Data - 170K Plain Texts that contain polarity labels respectively. (Not Movie Reivews, a sentence per data)
      Test Data - 25K Kaggle Movie Review Corpora that contain polarity lables respectively. (11~17 sentences per data on Average)
 
-# Korean Datasets (provided by [**박은정**](http://whatismarkdown.com/))
+# Korean Datasets (provided by [**https://github.com/e9t/nsmc**](http://whatismarkdown.com/))
 
      Train Data - 150K Plain Texts that contain polarity labels crawled from Naver Movie.
      Test Data - 50K Plain Texts that contain polarity labels crawled from Naver Movie.
